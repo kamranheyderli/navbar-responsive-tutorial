@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+header {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 25, 35);
+
+    .container {
+        width: 80%;
+        height: 86px;
+        background-color: rgb(15, 25, 35);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo {
+        img {
+            width: 150px;
+            height: 50px;
+
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                margin-left: 25px;
+
+                a {
+                    font-size: 20px;
+                    color: white;
+                }
+
+                a:hover {
+                    color: orange;
+                }
+            }
+        }
+    }
+
+
+    .social {
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgb(50, 60, 70);
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 20px;
+                color: aliceblue;
+            }
+
+        }
+
+        i:hover {
+            color: rgb(15, 25, 35);
+        }
+
+        li:hover {
+            background-color: orange;
+        }
+    }
+
+    .hamburger {
+        i {
+            font-size: 25px;
+            color: aliceblue;
+            display: none;
+        }
+    }
+
+
+}
+
+
+
+// mobile sersion 
+@media (max-width:665px) {
+    header {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+
+        }
+
+
+        nav {
+            ul {
+                position: fixed;
+                background-color: rgb(15, 25, 35);
+                top: 80px;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin-bottom: 50px;
+                    a{
+                        font-size: 30px;
+                    }
+                    a:hover{
+                        color: yellow;
+                    }
+                }
+            }
+
+
+        }
+
+        .social {
+            display: none;
+        }
+
+        .hamburger {
+            i {
+                display: block;
+                font-size: 40px;
+            }
+            i:hover{
+                color: yellow;
+            }
+
+        }
+    }
+
+}

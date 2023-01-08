@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 25, 35);
+}
+header .container {
+  width: 80%;
+  height: 86px;
+  background-color: rgb(15, 25, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  width: 150px;
+  height: 50px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  margin-left: 25px;
+}
+header nav ul li a {
+  font-size: 20px;
+  color: white;
+}
+header nav ul li a:hover {
+  color: orange;
+}
+header .social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .social li {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(50, 60, 70);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .social li i {
+  font-size: 20px;
+  color: aliceblue;
+}
+header .social i:hover {
+  color: rgb(15, 25, 35);
+}
+header .social li:hover {
+  background-color: orange;
+}
+header .hamburger i {
+  font-size: 25px;
+  color: aliceblue;
+  display: none;
+}
+
+@media (max-width: 665px) {
+  header {
+    position: relative;
+  }
+  header img {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+  header nav ul {
+    position: fixed;
+    background-color: rgb(15, 25, 35);
+    top: 80px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li {
+    margin-bottom: 50px;
+  }
+  header nav ul li a {
+    font-size: 30px;
+  }
+  header nav ul li a:hover {
+    color: yellow;
+  }
+  header .social {
+    display: none;
+  }
+  header .hamburger i {
+    display: block;
+    font-size: 40px;
+  }
+  header .hamburger i:hover {
+    color: yellow;
+  }
+}/*# sourceMappingURL=style.css.map */
